@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vendor Shop</title>
+    <style>
+      body {
+        padding: 40px;
+        background-color: #333333;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #00cc66;
+      }
+      .product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: #444444;
+        border-radius: 10px;
+      }
+      .product img {
+        width: 200px;
+        margin-right: 20px;
+      }
+      .product p {
+        margin-bottom: 0;
+      }
+      .product form {
+        margin-top: 20px;
+        text-align: center;
+      }
+      input[type="submit"] {
+        background-color: #00cc66;
+        color: #333333;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to our Vendor Shop</h1>
+
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <div>
+        <h2>Product 1</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus malesuada, velit ipsum varius velit, vel sollicitudin est quam id velit. </p>
+        <p>Price: 0.5 Monero</p>
+        <form action="https://www.coinpayments.net/index.php" method="post">
+          <input type="hidden" name="cmd" value="_pay">
+          <input type="hidden" name="reset" value="1">
+          <input type="hidden" name="merchant" value="YOUR_MERCHANT_ID">
+          <input type="hidden" name="item_name" value="Product 1">
+          <input type="hidden" name="amountf" value="0.5">
+          <input type="hidden" name="currency" value="XMR">
+          <input type="hidden" name="want_shipping" value="0">
+          <input type="hidden" name="success_url" value="YOUR_SUCCESS_URL">
+          <input type="hidden" name="cancel_url" value="YOUR_CANCEL_URL">
+          <input type="hidden" name="ipn_url" value="YOUR_IPN_URL">
+          <input type="submit" value="Checkout with Monero">
+        </form>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+<div>
+<h2>Product 2</h2>
+<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus malesuada, velit ipsum varius velit, vel sollicitudin est quam id velit. </p>
+<p>Price: 1 Monero</p>
+<form action="https://www.coinpayments.net/index.php" method="post">
+<input type="hidden" name="cmd" value="_pay">
+<input type="hidden" name="reset" value="1">
+<input type="hidden" name="merchant" value="YOUR_MERCHANT_ID">
+<input type="hidden" name="item_name" value="Product 2">
+<input type="hidden" name="amountf" value="1">
+<input type="hidden" name="currency" value="XMR">
+<input type="hidden" name="want_shipping" value="0">
+<input type="hidden" name="success_url" value="YOUR_SUCCESS_URL">
+<input type="hidden" name="cancel_url" value="YOUR_CANCEL_URL">
+<input type="hidden" name="ipn_url" value="YOUR_IPN_URL">
+<input type="submit" value="Checkout with Monero">
+</form>
+</div>
+</div>
+
+  </body>
+</html>

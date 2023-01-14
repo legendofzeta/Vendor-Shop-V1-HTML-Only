@@ -18,7 +18,7 @@
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 40px;
-        padding: 20px;
+        padding: 40px; /* increased padding for the products */
         background-color: #444444;
         border-radius: 10px;
       }
@@ -32,66 +32,44 @@
       .product form {
         margin-top: 20px;
         text-align: center;
+        padding: 10px; /* added padding to the form */
       }
       input[type="submit"] {
         background-color: #00cc66;
         color: #333333;
         border: none;
-        padding: 10px 20px;
+        padding: 20px; /* increased padding for the submit button */
         border-radius: 10px;
         cursor: pointer;
+        font-size: 1.2em; /* increased font size for the submit button */
       }
-.pgp-key {
+      /* Updated CSS styles for the PGP key section */
+      .pgp-key {
         text-align: center;
-        background-color: black; /* changes the background color to black */
-        padding: 20px;
+        background-color: #f5f5f5;
+        padding: 40px; /* increased padding for the PGP key section */
         border-radius: 10px;
         margin: 40px auto;
         width: 80%;
       }
       .pgp-key h2{
         margin-bottom: 20px;
-        color: #00cc66; /* changes the title color to green */
+        color: #00cc66;
+        font-size: 1.5em; /* increased font size for the title */
       }
       .pgp-key pre{
-        background-color: black; /* changes the key text background color to black */
-        padding: 20px;
+        background-color:
+        background-color: #e5e5e5;
+        padding: 40px; /* increased padding for the PGP key text */
         border-radius: 10px;
         white-space: pre-wrap;
         word-break: break-all;
         font-family: monospace;
-        color: #00cc66; /* changes the key text color to green */
+        color: #333333;
+        font-size: 1.2em; /* increased font size for the PGP key text */
       }
-.pgp-key {
-        text-align: center; /* centers the text within the div */
-        background-color: #f5f5f5; /* adds a light gray background color to the section */
-        padding: 20px; /* adds padding to the section */
-        border-radius: 10px; /* adds rounded edges to the section */
-        margin: 40px auto; /* centers the section horizontally and adds a margin */
-        width: 80%; /* limits the width of the section */
-      }
-      .pgp-key h2{
-        margin-bottom: 20px; /* adds space between the title and the key */
-      }
-      .pgp-key pre{
-        background-color: #e5e5e5; /* adds a light gray background color to the key text */
-        padding: 20px; /* adds padding to the key text */
-        border-radius: 10px; /* adds rounded edges to the key text */
-        white-space: pre-wrap; /* preserves white space in the key text */
-        word-break: break-all; /* breaks long lines of text */
-        font-family: monospace; /* sets the font for the key text to a monospace font */
-      }
-.pgp-key pre{
-    background-color: #e5e5e5;
-    padding: 20px;
-    border-radius: 10px;
-    white-space: pre-wrap;
-    word-break: break-all;
-    font-family: monospace;
-    color: #333333; /* sets the text color to a dark gray */
-}
     </style>
-  </head>
+ </head>
   <body>
     <h1>Welcome to our Vendor Shop</h1>
 
@@ -119,35 +97,29 @@
 
     <div class="product">
       <img src="product2.jpg" alt="Product 2">
-<div>
-<h2>Product 2</h2>
-<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus malesuada, velit ipsum varius velit, vel sollicitudin est quam id velit. </p>
-<p>Price: 1 Monero</p>
-<form action="https://www.coinpayments.net/index.php" method="post">
-<input type="hidden" name="cmd" value="_pay">
-<input type="hidden" name="reset" value="1">
-<input type="hidden" name="merchant" value="YOUR_MERCHANT_ID">
-<input type="hidden" name="item_name" value="Product 2">
-<input type="hidden" name="amountf" value="1">
-<input type="hidden" name="currency" value="XMR">
-<input type="hidden" name="want_shipping" value="0">
-<input type="hidden" name="success_url" value="YOUR_SUCCESS_URL">
-<input type="hidden" name="cancel_url" value="YOUR_CANCEL_URL">
-<input type="hidden" name="ipn_url" value="YOUR_IPN_URL">
-<input type="submit" value="Checkout with Monero">
-</form>
-</div>
-</div>
-<div class="pgp-key">
-      <h2>PGP Key</h2>
-      <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
-      <!-- PGP key here -->
-
-      -----END PGP PUBLIC KEY BLOCK-----</pre>
+      <div>
+        <h2>Product 2</h2>
+        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a faucibus malesuada, velit ipsum varius velit, vel sollicitudin est quam id velit. </p>
+        <p>Price: 1 Monero</p>
+        <form action="https://www.coinpayments.net/index.php" method="post">
+          <input type="hidden" name="cmd" value="_pay">
+          <input type="hidden" name="reset" value="1">
+          <input type="hidden" name="merchant" value="YOUR_MERCHANT_ID">
+          <input type="hidden" name="item_name" value="Product 2">
+          <input type="hidden" name="amountf" value="1">
+          <input type="hidden" name="currency" value="XMR">
+          <input type="hidden" name="want_shipping" value="0">
+          <input type="hidden" name="success_url" value="YOUR_SUCCESS_URL">
+          <input type="hidden" name="cancel_url" value="YOUR_CANCEL_URL">
+          <input type="hidden" name="ipn_url" value="YOUR_IPN_URL">
+          <input type="submit" value="Checkout with Monero">
+        </form>
+      </div>
     </div>
-  </body>
-</html>
-
-
+    <!-- PGP Key section -->
+    <div class="pgp-key">
+      <h2>Our PGP Key</h2>
+      <pre>YOUR_PGP_KEY_HERE</pre>
+    </div>
   </body>
 </html>

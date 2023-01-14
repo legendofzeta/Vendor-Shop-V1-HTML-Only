@@ -41,6 +41,34 @@
         border-radius: 10px;
         cursor: pointer;
       }
+.pgp-key {
+        text-align: center; /* centers the text within the div */
+        background-color: #f5f5f5; /* adds a light gray background color to the section */
+        padding: 20px; /* adds padding to the section */
+        border-radius: 10px; /* adds rounded edges to the section */
+        margin: 40px auto; /* centers the section horizontally and adds a margin */
+        width: 80%; /* limits the width of the section */
+      }
+      .pgp-key h2{
+        margin-bottom: 20px; /* adds space between the title and the key */
+      }
+      .pgp-key pre{
+        background-color: #e5e5e5; /* adds a light gray background color to the key text */
+        padding: 20px; /* adds padding to the key text */
+        border-radius: 10px; /* adds rounded edges to the key text */
+        white-space: pre-wrap; /* preserves white space in the key text */
+        word-break: break-all; /* breaks long lines of text */
+        font-family: monospace; /* sets the font for the key text to a monospace font */
+      }
+.pgp-key pre{
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: monospace;
+    color: #333333; /* sets the text color to a dark gray */
+}
     </style>
   </head>
   <body>
@@ -89,6 +117,15 @@
 </form>
 </div>
 </div>
+<div class="pgp-key">
+      <h2>PGP Key</h2>
+      <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+      <!-- PGP key here -->
+      -----END PGP PUBLIC KEY BLOCK-----</pre>
+    </div>
+  </body>
+</html>
+
 
   </body>
 </html>
